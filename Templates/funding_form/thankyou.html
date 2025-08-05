@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Application Confirmation</title>
+  <link rel="stylesheet" href="{% static  'css/thankyou.css'  %}">
+</head>
+<body>
+  <div class="confirmation-box">
+    <div class="header">
+      <div class="icon-circle">
+        <img src="{% static 'img/Thumb_.png' %}" alt="Thumbs Up">
+      </div>
+    </div>
+    
+
+    <div class="content" style="text-align: left; margin-left: 10%; padding: 20px;">
+      <h1 style="text-align: center;">Thank You!</h1>
+
+      <p>A member of the Techblume Admission team will be in touch with you shortly.<br>
+         Kindly monitor your <strong>email</strong>, <strong>WhatsApp</strong>, or <strong>phone</strong> for any messages from us.</p>
+      
+      <p>Please submit the following documents to <span class="email">diploma@techblume.in</span></p>
+      
+      <ul>
+        <li>Proof of South African ID or Passport</li>
+        <li>Payslips from the last 3 months</li>
+        <li>Bank statements from the last 3 months</li>
+        <li>Proof of Current Address</li>
+      </ul>
+
+  <div style="text-align: center;">
+  <a href="https://www.techblume.io">
+    <button type="button" class="submit-btn">Back to Homepage</button>
+  </a>
+</div>
+
+    </div>
+  </div>
+</body>
+</html>

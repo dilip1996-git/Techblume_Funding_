@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techblume funding application</title>
+    <link rel="stylesheet" href="{% static  'css/form.css'  %}">
+    
+    
+</head>
+<body>
+     <img src="{% static 'img/logo.png' %}" alt="Techblume Logo" class="logo">
+     
+     <div>
+    <h1>Techblume "Zero Interest" Installment Plan </h1>
+  <form method="post" class="form_beta" style="width: 70%;">
+
+        {% csrf_token %}
+        {{form.as_p}}
+        <br/>
+         <button type="submit" class="submit-btn">Submit</button>
+    </form>
+    </div>
+
+</body>
+</html>
